@@ -23,24 +23,26 @@
           class="survey__item user"
           type="text"
           placeholder="Иванов Иван Иванович"
+          required
         />
         <input
           class="survey__item telephone"
           type="tel"
           placeholder="+7(999) 999-99-99"
+          required
         />
         <fieldset class="survey__item">
           <legend>Ваш пол</legend>
           <div class="radio__item">
-            <input type="radio" name="choice" value="laminat" />
+            <input type="radio" name="choice" id="laminat" checked />
             <label for="laminat">Ламинат</label>
           </div>
           <div class="radio__item">
-            <input type="radio" name="choice" value="plitka" />
+            <input type="radio" name="choice" id="plitka" />
             <label for="plitka">Плитка</label>
           </div>
           <div class="radio__item">
-            <input type="radio" name="choice" value="keramika" />
+            <input type="radio" name="choice" id="keramika" />
             <label for="keramika">Керамика</label>
           </div>
         </fieldset>
