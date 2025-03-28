@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Web laboratory number seven" />
+    <link
+      rel="stylesheet"
+      href="css/node_modules/normalize.css/normalize.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>WebLab7</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__item red">Красный</div>
+      <div class="container__item green">Зеленый</div>
+      <div class="container__item blue">Синий</div>
+    </div>
+    <div class="survey-container">
+      <form class="survey">
+        <input
+          class="survey__item user"
+          type="text"
+          placeholder="Иванов Иван Иванович"
+        />
+        <input
+          class="survey__item telephone"
+          type="tel"
+          placeholder="+7(999) 999-99-99"
+        />
+        <fieldset class="survey__item">
+          <legend>Ваш пол</legend>
+          <div class="radio__item">
+            <input type="radio" name="choice" value="laminat" />
+            <label for="laminat">Ламинат</label>
+          </div>
+          <div class="radio__item">
+            <input type="radio" name="choice" value="plitka" />
+            <label for="plitka">Плитка</label>
+          </div>
+          <div class="radio__item">
+            <input type="radio" name="choice" value="keramika" />
+            <label for="keramika">Керамика</label>
+          </div>
+        </fieldset>
+        <button class="survey__item survey__send-button">Отправить</button>
+      </form>
+    </div>
+  </body>
+</html>

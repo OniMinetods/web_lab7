@@ -1,0 +1,67 @@
+body {
+  background-color: antiquewhite;
+  font-family: Bahnschrift;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background-color: blueviolet;
+}
+
+.container__item {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+.container__item.red {
+  background-color: red;
+}
+.container__item.green {
+  background-color: green;
+  position: relative;
+  left: -30vw;
+  top: 5vh;
+}
+.container__item.blue {
+  background-color: blue;
+  position: relative;
+  left: -60vw;
+  top: 10vh;
+}
+
+.survey-container {
+  padding: 20px;
+}
+
+.survey {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user,
+.telephone {
+  border: 1px solid;
+}
+
+.survey__item {
+  width: 20vw;
+  padding: 15px;
+  border-radius: 30px;
+  margin: 5px 0;
+}
+
+.survey__send-button {
+  background-color: red;
+  color: white;
+  border: 0;
+}
+
+.survey__send-button:hover {
+  box-shadow: 3px 3px 10px black;
+}
